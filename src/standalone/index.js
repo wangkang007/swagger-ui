@@ -1,4 +1,5 @@
-import StandaloneLayout from "./layout"
+// import StandaloneLayout from "./layout"
+import ParentLayout from "./parentLayout"
 import TopbarPlugin from "plugins/topbar"
 import ConfigsPlugin from "plugins/configs"
 
@@ -9,7 +10,7 @@ let preset = [
   ConfigsPlugin,
   () => {
     return {
-      components: { StandaloneLayout }
+      components: { ParentLayout }
     }
   }
 ]

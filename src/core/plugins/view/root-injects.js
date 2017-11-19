@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import ReactDOM from "react-dom"
 import { connect, Provider } from "react-redux"
 import omit from "lodash/omit"
-
+import 'antd/dist/antd.css'
 const SystemWrapper = (getSystem, ComponentToWrap ) => class extends Component {
   render() {
     return <ComponentToWrap {...getSystem() } {...this.props} {...this.context} />
