@@ -28,6 +28,7 @@ export default class App extends React.Component {
   }
   onCollapse = (collapsed) => {
     console.log(collapsed);
+    
     this.setState({ collapsed });
   }
   render() {
@@ -43,13 +44,13 @@ export default class App extends React.Component {
 
 
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-            <div className="global-search-wrapper" style={{ width: '100%' }}>
+            <div className="global-search-wrapper">
               <AutoComplete
                 dataSource={dataSource}
                 style={{ width: 200 }}
                 onSelect={onSelect}
                 onSearch={this.handleSearch}
-                placeholder="input here"
+                placeholder="项目名称"
               />
             </div>
             <Menu.Item key="1" className="firstMenu">
@@ -85,8 +86,6 @@ export default class App extends React.Component {
     )
   }
 }
-
-
 
 App.propTypes = {
   getComponent: PropTypes.func.isRequired,
