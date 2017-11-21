@@ -62,10 +62,11 @@ import VersionStamp from "core/components/version-stamp"
 import Markdown from "core/components/providers/markdown"
 
 import BaseLayout from "core/components/layouts/base"
-
+ 
+import SiderNav from "core/components/sider-nav"
+import ProjectIndex from "core/components/project/project-index"
 import * as LayoutUtils from "core/components/layout-utils"
 import * as JsonSchemaComponents from "core/json-schema-components"
-
 export default function() {
 
   let coreComponents = {
@@ -115,7 +116,8 @@ export default function() {
       Markdown,
       BaseLayout,
       VersionStamp,
-      OperationContainer
+      OperationContainer,
+      SiderNav
     }
   }
 
